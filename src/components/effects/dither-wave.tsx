@@ -143,7 +143,7 @@ const QUALITY_SETTINGS = {
 } as const;
 
 const hexToRgb = (hex: string) => {
-  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/v.exec(hex);
   return result
     ? {
         b: Number.parseInt(result[3], 16) / 255,
